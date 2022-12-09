@@ -10,22 +10,17 @@ window.onload = function() {
     var enlaces = document.getElementsByTagName("a");
    alert("Numero de enlaces = "+enlaces.length); 
 
-   let mensaje = "El penultimo enlace apunta a: "+enlaces[enlaces.length-1].href;
+   let mensaje = "El ultimo enlace apunta a: "+enlaces[enlaces.length-1].href;
   alert(mensaje);
 
     // Numero de parrafos
     var parrafos = document.getElementsByTagName("p");
    alert("Numero de parrafos = "+parrafos.length); 
-}
 
-function init() {
- 
-    let p = document.createElement("p");
+   let p = document.createElement("p");
     let pTexto = document.createTextNode("Creando párrafo para el ejercicio 8");
     p.appendChild(pTexto);
  
     document.body.appendChild(p);
- 
 }
- 
-window.onload = init;
+

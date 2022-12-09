@@ -17,3 +17,24 @@ let number = parseInt(prompt("Introduce un número"));
 }
 
 pair(number);
+
+let string = prompt("Introduce un texto");
+
+function upperOrLower(string) {
+
+  // Comprobar mayúsculas y minúsculas
+  if(string == string.toUpperCase()) {
+    alert("La cadena pasada está formada sólo por mayúsculas") ;
+  }
+  else if(string == string.toLowerCase()) {
+    alert("La cadena pasada está formada sólo por minúsculas");
+  }
+  else {
+    alert("La cadena pasada está formada por mayúsculas y minúsculas");
+  }
+
+}
+
+upperOrLower(string);
+
+

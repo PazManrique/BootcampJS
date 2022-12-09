@@ -4,10 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario Avanzado</title>
 </head>
 <body>
-    <h1>Ejercicio 9</h1>
-    <script src="exercise9.js"></script>
+  <section id="cv"></section>
+        <h1>Rellena tu CV</h1>
+      
+        <h3>Datos Personales</h3>
+        <form name="form1" method="post" action="" onSubmit="return Validar1('province','birthDate')">
+            <label for="province">Provincia</label><br>
+            <select name="province" id="province">
+                <option value="Selecciona">Selecciona</option>
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Corrientes">Corrientes</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="Chubut">Chubnut</option>
+            </select><br>
+            <br>
+  <label for="birthDate">Fecha de nacimiento</label><br>
+  <input type="text" id="day" name="day" placeholder="DD">
+  <select name="month" id="month">
+    <option value="Enero">Enero</option>
+    <option value="Febrero">Febrero</option>
+    <option value="Marzo">Marzo</option>
+    <option value="Abril">Abril</option>
+    <option value="Mayo">Mayo</option>
+    <option value="Junio">Junio</option>
+    <option value="Julio">Julio</option>
+    <option value="Agosto">Agosto</option>
+    <option value="Septiembre">Septiembre</option>
+    <option value="Octubre">Octubre</option>
+    <option value="Noviembre">Noviembre</option>
+    <option value="Diciembre">Diciembre</option>
+  </select>
+  <input type="text" id="year" name="year" placeholder="YYYY"><br>
+  <br>
+  <label for="interest">Temas de Interés</label><br>
+  <select name="interest" id="interest" size="5">
+    <option value="Administración de bases de datos">Administración de bases de datos</option>
+    <option value="Análisis y programación">Análisis y programación</option>
+    <option value="Arquitectura">Arquitectura</option>
+    <option value="Calidad">Calidad</option>
+    <option value="ERP, CRM, Business Intelligence">Mayo</option>
+    <option value="Java">Java</option>
+    <option value="SQL">SQL</option>
+    <option value="Netflix">Netflix</option>
+    <option value="Burger King">Burger King</option>
+  </select>
+  <input type="submit" value="Enviar" />
+        </form>
+    </section>
+
+    <section id="product"></section>
+    <h1>Información sobre el producto</h1>
+  
+    <h3>Datos básicos</h3>
+    <form name="formu" method="post" action="" onSubmit="return Validar2('pName','price')">
+        <label for="pName">Nombre</label><br>
+        <input type="text" id="pName" name="pName" placeholder="Introduce tu nombre"><br>
+       <br>
+
+       <label for="description">Descripción</label><br>
+       <textarea id="description" name="description" cols="30" rows="10" placeholder="Introduce la descripción"></textarea>></textarea>
+       <br>
+      <br>
+
+      <label for="pPicture">Foto</label>
+      <input type="text" id="pPicture" name="pPicture" placeholder="jpg/pdf/png">
+      <input type="button" id="pChoose" value="Elegir"><br>
+        <br>
+        <input type="radio" id="counter" name="counter" value="Añadir contador de visitas">
+        <label for="counter">Añadir contador de visitas</label><br>
+
+        <h3>Datos económicos</h3>
+        <label for="price">Precio</label><input type="number"  id="price" name="price"><label for="coin">€</label>
+        <label for="taxes">Impuestos</label>
+        <select name="taxes" id="taxes">
+            <option value="4">4%</option>
+            <option value="7">7%</option>
+            <option value="16">16%</option>
+            <option value="25">25%</option>
+          </select><br>
+          <label for="promotion">Promoción</label><br>
+          <input type="radio" id="none" name="promotion" value="Ninguno"><label for="none">Ninguno</label><br>
+          <input type="radio" id="free" name="promotion" value="Transporte gratuito"><label for="free">Tansporte gratuito</label><br>
+          <input type="radio" id="discount" name="promotion" value="Descuento 5%"><label for="discount">Descuentp 5%</label><br>
+
+       
+     
+        <br>
+        <br>
+        <input type="submit" value="Enviar" />
+    </form>
+</section>
+<script src="exercise9.js"></script>
 </body>
 </html>
