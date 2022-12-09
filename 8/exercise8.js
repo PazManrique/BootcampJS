@@ -16,7 +16,16 @@ window.onload = function() {
     // Numero de parrafos
     var parrafos = document.getElementsByTagName("p");
    alert("Numero de parrafos = "+parrafos.length); 
-
-  
-
 }
+
+function init() {
+ 
+    let p = document.createElement("p");
+    let pTexto = document.createTextNode("Creando párrafo para el ejercicio 8");
+    p.appendChild(pTexto);
+ 
+    document.body.appendChild(p);
+ 
+}
+ 
+window.onload = init;
